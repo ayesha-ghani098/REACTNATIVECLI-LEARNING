@@ -25,6 +25,9 @@ function Home({navigation}) {
     navigation.navigate('FirebaseDemo');
   }
 
+   const navigatetologin = () => {
+     navigation.navigate('Login');
+   };
 
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -33,6 +36,7 @@ function Home({navigation}) {
       {/* <Button onPress={navigatetoimagepicker} title="Pick Image" /> */}
       {/* for firebase demo */}
       <Button onPress={navigatetofirebasedemo} title="Firebase Demo" />
+      <Button onPress={navigatetologin} title="Login" />
     </View>
   );
 }
